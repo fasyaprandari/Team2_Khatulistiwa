@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.body1{
+    height: 100vh;
+    background-color: #000;
+    background-image: url('https://www.hdwallpaperslife.com/wp-content/uploads/2017/11/cool_mountains_4k-HD.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: orange;
+}
+/* HEADER */
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: orange;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale .2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: #fff;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+.logo i{
+    color: #fff;
+    font-size: 30px;
+    margin-right: 2px;
+}
+
+/* DROPDOWN MENU */
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 180px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* HOME */
+section#home{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+#home h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media(max-width: 992px){
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media(max-width: 576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
+
+/* konten */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    background: rgb(147,176,171);
+    background: linear-gradient(360deg, rgba(147,176,171,1) 0%, rgba(13,37,59,1) 38%, rgba(8,4,12,1) 100%);
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    max-width: 1000px;
+    min-height: 100vh;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 25px;
+
+}
+
+.section-flex > .image-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container > .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.f-judul {
+    font-size: 75px;
+    text-align: center;
+    line-height: 2.3cm;
+}
+
+.explain-paragraph1 {
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 1.5cm;
+    margin-left: 1.5cm;
+}
+
+.weather-logo {
+    float: right;
+    margin-right: 1.5cm;
+    margin-left: 1.5cm;
+}
+
+.thought-logo {
+    float: left;
+    margin-right: 1cm;
+    margin-left: 1.5cm;
+}
+
+.f-judul2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 0%;
+    line-height: 1cm;
+}
+
+.f-judul3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 0%;
+    line-height: 1cm;
+}
+
+.list-kesatu {
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 1cm;
+    margin-right: 1.5cm;
+    margin-left: 1cm;
+}
+
+button {
+    line-height: 1;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    height: 40px;
+    width: 150px;
+}
+
+.first-button {
+    background-color: rgb(103, 126, 189);
+    color:white;
+    box-shadow: 4px 4px 1px rgb(0, 0, 0, .2);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    margin-bottom: 1cm;
+}
+footer{
+    position: absolute;
+    bottom: 300;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 7px;
+    color: #fff;
+}
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
